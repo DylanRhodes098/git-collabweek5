@@ -21,30 +21,87 @@
 
 </head>
 <body>
-    <header class="sticky-top ">
-        <!-- Bootstrap position helper 'sticky-top' used for sticky header -->
-        <nav class="navbar">
-            <div class="container">
-                <h1>
-                    <a class="navbar-brand" href="#">LOGO HERE</a>
-                </h1>
-            </div>
-        </nav>
-    </header>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="col-md-2 sidebar">
-                    <ul class="nav flex-column"> <!-- TODO - place sidebar next to grid -->
-                        <li class="nav-item">
-                            <!-- <a class="nav-link active" href="#">Active</a> -->
-                            Nav-Item 1
-                        </li>
-                        <li class="nav-item">
-                            Nav-Item 2 etc
-                        </li>
-                    </ul>
-                </nav>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+  <div class="container-fluid">
+    <img src="./Assets/Media/Weather.io logo.svg" style="max-width: 115px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+      
+      <div class="col-md-2 d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <i class="bi bi-bootstrap-fill me-2" style="font-size: 2rem;"></i>
+          <span class="fs-4">Sidebar</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <i class="bi bi-house-door me-2"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-speedometer2 me-2"></i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-table me-2"></i>
+              Orders
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-grid me-2"></i>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-person-circle me-2"></i>
+              Customers
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://via.placeholder.com/32" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>User</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="col-md-10 p-4">
+        <h1>Main Content Area</h1>
+      </main>
+    </div>
+  </div>
+
+
+
                 <div class="d-flex flex-wrap">
                     <div class="row">
                         <div class="col">Todo</div>
