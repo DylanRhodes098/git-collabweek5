@@ -1,7 +1,9 @@
-document.getElementById("fetchDestination").addEventListener("click", serachButton);
+document.getElementById("fetchDestination").addEventListener("click", searchButton);
 const apiKey = "f23ee9deb4e1a7450f3157c44ed020e1";
+const ulEl = document.querySelector(".hi")
+const destination = document.getElementById("destination").value;
 
-function serachButton() {
+function searchButton() {
   const destination = document.getElementById("destination").value;
 
   if (destination) {
@@ -26,6 +28,8 @@ function serachButton() {
 }
 
 const renderDestination = (render) => {
+  const destination = document.getElementById("destination").value;
+
     render.forEach((rend) => {
         let latitude = rend.lat
         let longitude = rend.lon
@@ -51,10 +55,41 @@ const renderDestination = (render) => {
     console.log("Please enter a destination");
   }
 
+  let userDestination = document.createElement("li");
+      userDestination.textContent = `Destination: ${destination}`;
+      ulEl.appendChild(userDestination);
+
   const renderWeather = (render) => {
-      console.log(render.main.temp);
-      console.log(rend.main.feels_min);
+      let temperature = render.main.temp;
+      let windSpeed = render.wind.speed;
+      let humidity = render.main.humidity;
+      let feelsLike = render.main.feels_like;
+      console.log(temperature);
+      console.log(windSpeed);
+      console.log(humidity);
+      console.log(feelsLike);
+
+      let userWeather = document.createElement("li");
+      userWeather.textContent = `Temperature: ${temperature}°C`;
+      ulEl.appendChild(userWeather);
+
+      let userFeelsLike = document.createElement("li");
+      userFeelsLike.textContent = `Feels Like: ${feelsLike}°C`;
+      ulEl.appendChild(userFeelsLike);
+
+      let userWindSpeed = document.createElement("li");
+      userWindSpeed.textContent = `Wind Speed: ${windSpeed}m/s`;
+      ulEl.appendChild(userWindSpeed);
+
+      let userHumidity = document.createElement("li");
+      userHumidity.textContent = `Humidity: ${humidity}%`;
+      ulEl.appendChild(userHumidity);
+
+      document.getElementById("fetchDestination").addEventListener("click", searchButton);
+      function searchButton () {
+       ulEl.innerHTML = "";
     };
+    }
   });
   };
 
