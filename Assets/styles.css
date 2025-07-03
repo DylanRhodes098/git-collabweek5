@@ -7,8 +7,31 @@
     --primary-font: 'Poppins', sans-serif;
 }
 
+
 .navbar {
     border-bottom: 1px solid rgba(10, 12, 56, 0.08);
     padding: 1%;
 
+}
+
+.form-label {
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+input {
+    margin-bottom: 1%;
+}
+
+.col {
+    background-color: var(--white);
+    box-shadow: 0 0px 8px 0 rgba(28, 7, 75, 0.12);
+    border-radius: 16px;
+    padding: 3%;
+    border: 1px solid rgba(10, 12, 56, 0.08);
+    margin-top: 2%;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
 }
