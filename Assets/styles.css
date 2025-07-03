@@ -7,7 +7,9 @@
     --primary-font: 'Poppins', sans-serif;
 }
 
-
+p {
+    color: var(--text-color);
+}
 .navbar {
     border-bottom: 1px solid rgba(10, 12, 56, 0.08);
     padding: 1%;
@@ -20,18 +22,25 @@
 }
 
 input {
-    margin-bottom: 1%;
+    margin-bottom: 3%;
+    padding: 3%;
 }
 
-.col {
+.col-md-5 {
     background-color: var(--white);
     box-shadow: 0 0px 8px 0 rgba(28, 7, 75, 0.12);
     border-radius: 16px;
-    padding: 3%;
+    padding: 4%;
     border: 1px solid rgba(10, 12, 56, 0.08);
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-right: 20px;
 }
 
 .btn-primary {
     background-color: var(--primary-color);
+    border-radius: 100px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-left: 23px;
+    padding-right: 23px;
 }
