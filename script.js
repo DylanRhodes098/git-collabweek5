@@ -1,6 +1,6 @@
 document.getElementById("fetchDestination").addEventListener("click", searchButton);
 const apiKey = "f23ee9deb4e1a7450f3157c44ed020e1";
-const ulEl = document.querySelector(".hi")
+const ulEl = document.querySelector(".ulEl")
 const destination = document.getElementById("destination").value;
 
 function searchButton() {
