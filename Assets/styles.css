@@ -7,12 +7,17 @@
     --primary-font: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #FAFDFF;
+}
+
 p {
     color: var(--text-color);
 }
 .navbar {
     border-bottom: 1px solid rgba(10, 12, 56, 0.08);
     padding: 1%;
+    background-color: var(--white);
 
 }
 
@@ -43,4 +48,23 @@ input {
     letter-spacing: 1px;
     padding-left: 23px;
     padding-right: 23px;
+}
+
+.nav-text {
+    color: var(--text-color);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #F2F8FD;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.sidebar {
+    border-right: 1px solid rgba(10, 12, 56, 0.08);
+}
+
+.user {
+    color: #1C1F4E;
+    font-weight: 400;
 }
