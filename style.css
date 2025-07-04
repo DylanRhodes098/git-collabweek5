@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #0088FF;
+    --secondary-color: #1C1F4E;
+    --text-color: #808198;
+    --accent-color: #F3A738;
+    --white: #ffffff;
+    --primary-font: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FAFDFF;
+}
+
+p {
+    color: var(--text-color);
+}
+.navbar {
+    border-bottom: 1px solid rgba(10, 12, 56, 0.08);
+    padding: 1%;
+    background-color: var(--white);
+
+}
+
+.form-label {
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+input {
+    margin-bottom: 3%;
+    padding: 3%;
+}
+
+.col-md-5 {
+    background-color: var(--white);
+    box-shadow: 0 0px 8px 0 rgba(28, 7, 75, 0.12);
+    border-radius: 16px;
+    padding: 4%;
+    border: 1px solid rgba(10, 12, 56, 0.08);
+    margin-top: 1%;
+    margin-right: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.nav-text {
+    color: var(--text-color);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #F2F8FD;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.sidebar {
+    border-right: 1px solid rgba(10, 12, 56, 0.08);
+}
+
+.user {
+    color: #1C1F4E;
+    font-weight: 400;
+}
